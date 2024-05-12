@@ -10,4 +10,4 @@ YouTube Video Link:
 
 APIs: PokeAPI https://pokeapi.co/
 
-Contact Email: sroates@terpmail.umd.edu and (suds email)
+Contact Email: sroates@terpmail.umd.edu and sbhat126@terpmail.umd.edu
