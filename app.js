@@ -57,7 +57,7 @@ app.get("/pcBox", async (req, res) => {
 app.post("/releaseAll", async (req, res) => {
   const result = await client
     .db(databaseAndCollection.db)
-    .collection(databaseAndCollection.collection)
+    .collection(databaseAndCollection.collection)   
     .deleteMany({});
 
     res.render("index", {"error": null});
