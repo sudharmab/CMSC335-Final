@@ -6,7 +6,7 @@ const port = 3000;
 const bodyParser = require("body-parser");
 require("dotenv").config();
 
-// for css
+// for CSS
 app.use(express.static(path.join(__dirname, "views")));
 
 const uri = process.env.MONGO_CONNECTION_STRING;
