@@ -1,6 +1,13 @@
 body {
     background-color: rgb(221, 93, 93);
 }
+
+#error { 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px;
+}
 h1, h2 {
     text-align: center;
 }
@@ -17,6 +24,7 @@ img {
     border: 5px solid  black;
     padding: 1%;
     border-radius: 25px;
+    background-color:  white;
 }
 #PCBox {
     margin: auto;
@@ -25,6 +33,7 @@ img {
     padding: 1%;
     border-radius: 25px;
     text-align: center;
+    background-color:  white;
 }
 #pokeInfo {
     margin: auto;
@@ -32,6 +41,7 @@ img {
     padding: 1%;
     border-radius: 25px;
     text-align: center;
+    /* background-color:  white; */
 }
 #catchOrNo {
     text-align: center;

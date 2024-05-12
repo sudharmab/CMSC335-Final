@@ -59,6 +59,8 @@ app.post("/releaseAll", async (req, res) => {
     .db(databaseAndCollection.db)
     .collection(databaseAndCollection.collection)
     .deleteMany({});
+
+    res.render("index", {"error": null});
 });
 app.post("/displayPokemon", async (req, res) => {
   const { pokemon } = req.body;

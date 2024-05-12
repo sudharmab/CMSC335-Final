@@ -6,7 +6,7 @@
 </head>
 <body>
 
-  <h1>Hello</h1>
+  <h1>Pokemon Finder</h1>
 
   <form id = "choosePokemon" action="/displayPokemon" method="POST">
 
@@ -16,11 +16,13 @@
   </form>
   <br>
 
-  <% if (error) { %>
-    <div style="color: red;">
-      <strong><%= error %></strong>
-    </div>
-  <% } %>
+  <div id = "error">
+    <% if (error) { %>
+      <div>
+        <strong><%= error %></strong>
+      </div>
+    <% } %>
+</div>
 
   <div id="PCBox">
 
