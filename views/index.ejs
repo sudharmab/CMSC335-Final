@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pokemon TBA</title>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <h1>Hello</h1>
+
+  <form id = "choosePokemon" action="/displayPokemon" method="POST">
+
+    <label for="pokemon">Enter Pokemon Name: </label>
+    <input type="TEXT" id="pokemon" name="pokemon" value="pikachu">
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+
+  <% if (error) { %>
+    <div style="color: red;">
+      <strong><%= error %></strong>
+    </div>
+  <% } %>
+
+  <div id="PCBox">
+
+    <h2>PC BOX</h2>
+
+    View caught pokemon: <a href="/pcBox">Access pokemon storage</a>
+
+  </div>
+
+
+  
+  
+
+</body>
+</html>

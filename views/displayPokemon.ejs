@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Result</title>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  
+  <h1>Hello, <%= pokemon %>!</h1> 
+  <div id="pokemonName" pokeName ="<%= pokemon %>"></div>
+
+
+  <img src="<%= imageSrc %>" alt="Dynamic Image" width="100" height="100">
+  <br>
+  <div id = "pokeInfo">
+    <Strong>Type: </Strong> <%= type %>
+
+    <%- stats %>
+  </div>
+
+  <form id = "catchOrNo" action="/pokemonAction" method="post">
+    <input type="hidden" name="pokemon" value="<%= pokemon %>">
+    <input type="hidden" name="type" value="<%= type %>">
+    <button type="submit" name="action" value="catch">Catch Pokémon!</button>
+    <button type="submit" name="action" value="dontCatch">Don't Catch Pokémon!</button>
+  </form>
+  
+
+  <script>
+    let form = document.getElementById('catchOrNo');
+    let pokemon = document.getElementById('pokemonName').getAttribute('pokeName');
+
+    form.addEventListener('submit', function(event) {
+      let submitter = event.submitter;
+
+      if (submitter.value === 'catch') {
+        alert(pokemon + " caught!");
+      } else if (submitter.value === 'dontCatch') {
+        alert(pokemon + " not caught.");
+      }
+
+    });
+
+
+
+
+
+  </script>
+</body>
+</html>
