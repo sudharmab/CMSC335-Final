@@ -26,7 +26,10 @@
     <button type="submit" name="action" value="catch">Catch Pokémon!</button>
     <button type="submit" name="action" value="dontCatch">Don't Catch Pokémon!</button>
   </form>
-  
+  <br><br>
+  <div id = "choosePokemon">
+    <a href="/">Exit</a>
+  </div>
 
   <script>
     let form = document.getElementById('catchOrNo');
@@ -38,6 +41,7 @@
       if (submitter.value === 'catch') {
         alert(pokemon + " caught!");
       } else if (submitter.value === 'dontCatch') {
+        event.preventDefault();
         alert(pokemon + " not caught.");
       }
 
