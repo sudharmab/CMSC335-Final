@@ -6,7 +6,7 @@ Group Members: Samuel Oates (sroates) & Sudharma Bhat (sbhat126)
 
 App Description: Allows user to search for a pokemon, catch it, and store it in their pc box. They can then view all stored pokemon and release all stored pokemon.
 
-YouTube Video Link: 
+YouTube Video Link: https://youtu.be/i8xTyLEa9Vo
 
 Render Webpage: https://cmsc335-final-project-at0k.onrender.com/
 
